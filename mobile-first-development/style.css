@@ -1,35 +1,31 @@
 main {
-  flex:1;
   padding: 20px 0;
 }
 
 section {
-  flex:1;
   margin-bottom: 100px;
 }
 
 h1 {
-  flex:1;
   margin: 0 0 30px 10px;
 }
 
 h2 {
-  flex:1;
   margin: 0 10px;
   border-bottom: 1px solid gray;
 }
 
 h3 {
-  flex:1;
   margin: 12px 0;
   border-bottom: 1px solid lightgray;
 }
 
-/* Groups & Items */
+
+/* Groups & Items  (Mobile) */
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
@@ -40,4 +36,17 @@ h3 {
 
 .item-double {
   flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
